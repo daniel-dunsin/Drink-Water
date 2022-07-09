@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'open sans';
+    src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body{
+    font-family: 'open sans';
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(107, 187, 252);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.title h1{
+    font-weight: 500;
+    margin: 10px auto 3px;
+}
+.title{
+    margin-bottom: 30px;
+}
+
+.tank{
+    height: 260px;
+    width: 130px;
+    background-color: white;
+    border: 4px solid rgb(4, 136, 245);
+    margin: 0 auto;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.litres-remaining{
+    --remaining: 100%;
+    color: rgb(4, 136, 245);
+    font-weight: lighter;
+    font-size: 18px;
+    text-transform: capitalize;
+    flex-basis: var(--remaining);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: var(--remaining);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.litres-remaining span{
+    font-weight: bold;
+}
+.litres-drank{
+    --drank : 0%;
+    width: 100%;
+    height: var(--drank);
+    background:rgb(4, 136, 245);
+    flex-basis: var(--drank);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.litres-drank p{
+    font-weight: bold;
+    font-size: 25px;
+}
+.drum-title{
+    margin: 20px auto;
+}
+.drums{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.drum{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    border: 3px solid rgb(4, 136, 245);
+    color: rgb(4, 136, 245);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.fill-drum{
+    background-color: rgb(4, 136, 245);
+    color: white;
+}
